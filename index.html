@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms - Let's Learn</title>
+</head>
+<body>
+    <h1>Form to Apply for Sigma TA</h1>
+    <form action="/submit.php" method="post">
+        
+        <div>
+            <label for="username">Enter your username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your name here" autofocus required>
+        </div>
+
+        <div>
+            <p>Select your gender:</p>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <input type="gender" required>
+        </div>
+
+        <div>
+     <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+     <label for="subscribe">subscribe to newsletter</label>
+        </div>
+
+         <div>
+        <label for="comment">enter your comment</label>
+        <br>
+        <textarea name="comment" id="comment" rows="4" cols="50"></textarea>
+         </div>
+
+         <select name="fruits" id="fruits">
+            <option value="apple">apple</option>
+            <option value="mango">mango</option>
+            <option value="orange">orange</option>
+         </select>
+
+    </form>
+</body>
+</html>
